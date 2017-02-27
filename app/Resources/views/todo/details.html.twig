@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+
+<h2 class="page-header" > Todo details </h2>
+
+<h2> {{ item.name }} </h2>
+</br>
+<h4> {{ item.duedate | date( 'd.m.Y, g:i a' )}} </h4>
+<h4> {{ item.category }} </h4>
+<h4> {{ item.description }} </h4>
+
+{% endblock %}
+
+{% block javascripts %}
+{% endblock %}
